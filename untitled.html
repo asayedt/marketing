@@ -1,0 +1,137 @@
+/* Global Colors & Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+:root {
+  --primary-color: #e64072;
+  --secondary-color: #61adc5;
+  --accent-color: #f678a7;
+  --background-color: #ffffff;
+  --text-color: #333;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.lang-btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.lang-btn:hover {
+  background-color: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+.footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.footer .footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer .branches, .footer .contact-info {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Floating Contact Bar */
+.contact-bar {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.contact-bar a {
+  background-color: var(--accent-color);
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.contact-bar a:hover {
+  transform: scale(1.1);
+}
+
+.contact-bar i {
+  display: block;
+}
+
+/* Animations */
+.animate-slide {
+  animation: slideIn 1s ease forwards;
+}
+
+.animate-fade {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(-30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}

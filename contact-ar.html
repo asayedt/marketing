@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا - د. أيمن طاهر</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="navbar enhanced-navbar">
+  <div class="container nav-container">
+    <div class="logo-area">
+      <a href="index-ar.html" class="site-logo"><img src="icons/logo.png" alt="logo"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index-ar.html">الرئيسية</a></li>
+      <li><a href="services-ar.html">الخدمات</a></li>
+      <li><a href="articles-ar.html">المقالات</a></li>
+      <li><a href="contact-ar.html">تواصل معنا</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="lang-btn" onclick="switchLanguage('contact-en.html')">EN</button>
+    </div>
+  </div>
+</nav>
+    <div class="hero1-section animate-slide">
+      <h1>تواصل معنا</h1>
+      <p>نرحب باستفساراتكم وآرائكم بكل سرور</p>
+    </div>
+  </header>
+
+  <section class="contact-section animate-fade">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>معلومات التواصل</h2>
+        <p><img src="icons/phone-call.png" alt="Home"> الهاتف: <a href="tel:+201055020968" target="_blank">201055020968+</a></p>
+        <p><img src="icons/whatsapp.png" alt="Home">واتس أب :<a href="https://wa.me/+201055020968" target="_blank"> 201055020968+</a></p>
+		<p><img src="icons/facebook (1).png" alt="Home">الفيسبوك : <a href="https://www.facebook.com/DrAymanTaher.Gynecologist" target="_blank">دكتور : أيمن طاهر</a></p>
+		<p><img src="icons/instagram (1).png" alt="Home"> الإنستغرام: <a href="https://www.instagram.com/drayman.taher/" target="_blank">دكتور : أيمن طاهر</a></p>
+      </div>
+<div class="contact3-info">
+        <h2><img src="icons/hospital.png" alt="Home">فروعنا</h2>
+        <p>📍 فرع مصر الجديدة : ١٥ شارع الخليفه المأمون -&nbsp; الدور الاول -&nbsp; روكسى -&nbsp; مصر الجديدة</p>
+        <p>📍 فرع التجمع الخامس : عيادة 336 - الدور الثالث -&nbsp;   مبني HCC -&nbsp; خلف المستشفى الجوي
+      </p>
+      </div>
+
+      <div class="contact-form">
+  <h2>راسلنا الآن</h2>
+  <form id="whatsapp-form">
+    <input type="text" id="name" placeholder="الاسم الكامل" required>
+    <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+    <textarea id="message" placeholder="اكتب رسالتك هنا..." rows="5" required></textarea>
+    <button type="submit">إرسال الرسالة</button>
+  </form>
+</div>
+
+<script>
+  document.getElementById("whatsapp-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    var name = document.getElementById("name").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var message = document.getElementById("message").value.trim();
+
+    var fullMessage =
+  "\u200F💬 استفسار جديد من الموقع:\n" +
+  "\u200F👤 الاسم: " + name + "\n" +
+  "\u200F📞 رقم الهاتف: " + phone + "\n" +
+  "\u200F✉️ الرسالة: " + message;
+
+
+    var whatsappLink = "https://wa.me/+201055020968?text=" + encodeURIComponent(fullMessage);
+    window.open(whatsappLink, "_blank");
+  });
+</script>
+
+
+    </div>
+  </section>
+	<section class="branches-section">
+  <div class="container-branches">
+    
+    <div class="branch-box">
+      <h3 class="branch-title">فرع مصر الجديدة</h3>
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.2383225632116!2d31.309526099999992!3d30.0873602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e2d435cfe8f%3A0x8c60aafcaa4c4526!2s15%20El-Khalifa%20El-Maamoun%2C%20Mansh%C3%AEyet%20el%20Bakri%2C%20Heliopolis%2C%20Cairo%20Governorate%204460050!5e0!3m2!1sen!2seg!4v1742410294623!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="branch-box">
+      <h3 class="branch-title">فرع التجمع الخامس</h3>
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.5983751680005!2d31.4359294!3d30.0196866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583cd7a1175c49%3A0x5d3c638a947aeacf!2sHealth%20Care%20City!5e0!3m2!1sar!2seg!4v1742410381879!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>روابط سريعة</h4>
+      <ul>
+        <li><a href="index-ar.html"><img src="icons/home.png" alt="Home"> الرئيسية</a></li>
+        <li><a href="about-ar.html"><img src="icons/doctor.png" alt="Home"> عن الدكتور</a></li>
+        <li><a href="services-ar.html"><img src="icons/cost.png" alt="Home"> الخدمات</a></li>
+        <li><a href="articles-ar.html"><img src="icons/guide-book.png" alt="Home"> المقالات</a></li>
+        <li><a href="contact-ar.html"><img src="icons/phone-call.png" alt="Home"> تواصل معنا</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>فروعنا</h4>
+      <p><img src="icons/hospital.png" alt="Home"> القاهرة - مصر الجديدة</p>
+      <p><img src="icons/hospital.png" alt="Home"> القاهرة - التجمع الخامس </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>تابعنا</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/DrAymanTaher.Gynecologist" target="_blank"><img src="icons/facebook (1).png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/drayman.taher/" target="_blank"><img src="icons/instagram (1).png" alt="Instagram" /></a>
+        <a href="https://instagram.com/YourProfile" target="_blank"><img src="icons/youtube (1).png" alt="YouTube" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom t">
+    <p>© 2025 جميع الحقوق محفوظة - د. أيمن طاهر , الموقع تم تصميمه و تطويره عن طريق <a href="https://www.facebook.com/people/Elwakr/100076707162071/" target="_blank">ALWAKR</a></p>
+
+  </div>
+</footer>
+
+  <div class="contact-bar">
+    <a href="https://wa.me/+201055020968" target="_blank"><img src="icons/whatsapp.png" alt="WhatsApp"> </a>
+    <a href="tel:+201055020968" target="_blank"><img src="icons/phone-call.png" alt="Phone"></a>
+    <a href="#top"><img src="icons/arrow-up.png" alt="Scroll up"></a>
+  </div>
+</body>
+</html>
